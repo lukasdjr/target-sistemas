@@ -1,0 +1,13 @@
+# Python
+
+def check_fibonacci(num):
+    a = 0
+    b = 1
+    while b <= num:
+        if b == num:
+            return f"{num} pertence à sequência de Fibonacci."
+        a, b = b, a + b
+    return f"{num} não pertence à sequência de Fibonacci."
+
+num = int(input("Informe um número: "))
+print(check_fibonacci(num))
